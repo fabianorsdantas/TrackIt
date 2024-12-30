@@ -14,12 +14,12 @@
 ## 📖 Descrição
 Nesse projeto fizemos um aplicativo gerenciador de tarefas! Com ele o usuário poderá organizar atividades, permitindo que ele: 
 
-    >Liste tarefas de forma organizada;
-    >Defina prioridades;
-    >Acompanhe o status de cada tarefa;
-    >Planeje projetos;
-    >Programe atividades; e
-    >Gerencie o tempo.
+○ Liste tarefas de forma organizada;
+○ Defina prioridades;
+○ Acompanhe o status de cada tarefa;
+○ Planeje projetos;
+○ Programe atividades; e
+○ Gerencie o tempo.
 
 ## 🚀 Instalação
 Baixe o repositório do projeto no github e execute em sua máquina. Ou se preferir, acesse o aplicativo online no link abaixo:
@@ -28,7 +28,7 @@ Baixe o repositório do projeto no github e execute em sua máquina. Ou se prefe
 ## 💻 Preview
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center;" >
-<img src="./public/preview/Trackit.png style="margin: 10px">
+<img src="./public/preview/Trackit.png" style="margin: 10px">
 
 </div>
 
