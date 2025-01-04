@@ -1,10 +1,15 @@
 import styled from "styled-components";
-import { Watch } from "react-loader-spinner";
+import { ThreeDots } from "react-loader-spinner";
 
 export default function Loader() {
   return (
     <Container>
-      <Watch height="150" width="150" radius="48" color="#126BA5" ariaLabel="watch-loading" />
+      <ThreeDots 
+        height="80" 
+        width="80" 
+        color="#126BA5" 
+        ariaLabel="three-dots-loading" 
+      />
     </Container>
   );
 }
