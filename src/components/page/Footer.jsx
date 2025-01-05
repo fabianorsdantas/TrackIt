@@ -49,7 +49,7 @@ const Button = styled(Link)`
   font-size: 16px;
   font-weight: bold;
 
-  border: none; /* Remove bordas desnecessárias */
+  border: none; 
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 
@@ -59,11 +59,11 @@ const Button = styled(Link)`
   }
 
   &:not(:last-child) {
-    border-right: 1px solid #52b6ff; /* Adiciona uma borda entre os botões */
+    border-right: 1px solid #52b6ff; 
   }
 
   & > svg {
-    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    margin-right: 8px;
   }
 `;
 
@@ -73,6 +73,6 @@ const TodayButton = styled(Button)`
   align-items: center;
   
   & > svg {
-    margin-bottom: 5px; /* Espaço entre o ícone e o texto "Hoje" */
+    margin-bottom: 5px;
   }
 `;
