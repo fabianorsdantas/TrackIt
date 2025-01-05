@@ -1,5 +1,4 @@
 import { useContext } from "react";
-
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
@@ -32,9 +31,10 @@ const StyledHeader = styled.header`
   align-items: center;
   padding: 0 5vw;
 
-  position: fixed;
-  left: 0;
+  position: fixed; /* Fixa o cabeçalho no topo da tela */
   top: 0;
+  left: 0;
+  z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
 
   background: #126ba5;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
