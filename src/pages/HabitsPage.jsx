@@ -21,17 +21,17 @@ export default function HabitsPage() {
   const [selectedIds, setSelectedIds] = useState([]);
 
   const {
-    user: { token }
+    user: { token },
   } = useContext(UserContext);
 
   const getHabits = useCallback(() => {
     setIsLoading(true);
     listHabits(token)
-      .then(res => {
+      .then((res) => {
         setHabits(res.data);
         setIsLoading(false);
       })
-      .catch(err => {
+      .catch((err) => {
         alert(err.response.data.message);
         setIsLoading(false);
       });
@@ -40,7 +40,7 @@ export default function HabitsPage() {
   useEffect(getHabits, [getHabits]);
 
   return (
-    <Page isLoading={isLoading}>
+    <StyledPage isLoading={isLoading}>
       <Header>
         <PageTitle>Meus Hábitos</PageTitle>
         <button onClick={() => setIsOpen(!isOpen)}>+</button>
@@ -56,7 +56,7 @@ export default function HabitsPage() {
         />
       )}
       <Habits habits={habits} getHabits={getHabits} />
-    </Page>
+    </StyledPage>
   );
 }
 
@@ -77,4 +77,11 @@ const Header = styled.header`
     font-size: 27px;
     line-height: 34px;
   }
+`;
+
+const StyledPage = styled(Page)`
+  padding-top: 70px; /* Espaço equivalente à altura do cabeçalho */
+  overflow-y: auto; /* Garante que a página tenha rolagem */
+  min-height: 100vh;
+  background: #f2f2f2;
 `;
